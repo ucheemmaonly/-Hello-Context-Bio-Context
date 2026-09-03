@@ -4,12 +4,15 @@ function Usermodal({ selectedUser, onClose }) {
   return (
     <div
       onClick={onClose}
-      className={`fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4 backdrop-blur-sm`}>
+      className={`fixed inset-0 z-50 flex items-center justify-center bg-white p-4 backdrop-blur-sm`}
+    >
       <div
         onClick={function (event) {
           event.stopPropagation();
         }}
-        className="max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-3xl bg-white shadow-2xl">
+        className="max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-3xl bg-white shadow-2xl"
+      >
+        
         <div className="flex items-center justify-between border-b border-gray-100 p-6">
           <div>
             <h2 className="text-2xl font-bold text-gray-900">User Profile</h2>
@@ -21,7 +24,8 @@ function Usermodal({ selectedUser, onClose }) {
 
           <button
             onClick={onClose}
-            className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-xl text-gray-600 transition hover:bg-gray-200 hover:text-gray-900">
+            className="flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 text-xl text-gray-600 transition hover:bg-gray-200 hover:text-gray-900"
+          >
             ×
           </button>
         </div>
@@ -31,7 +35,8 @@ function Usermodal({ selectedUser, onClose }) {
             <img
               src={selectedUser.image}
               alt={`${selectedUser.firstName} ${selectedUser.lastName}`}
-              className="h-28 w-28 rounded-full object-cover ring-4 ring-gray-100"/>
+              className="h-28 w-28 rounded-full object-cover ring-4 ring-gray-100"
+            />
 
             <div className="mt-4 sm:ml-6 sm:mt-0">
               <h3 className="text-2xl font-bold text-gray-900">
@@ -130,6 +135,7 @@ function Usermodal({ selectedUser, onClose }) {
             </div>
           </div>
 
+          {/* University */}
           <div className="mt-8">
             <h4 className="mb-4 text-lg font-bold text-gray-900">Education</h4>
 

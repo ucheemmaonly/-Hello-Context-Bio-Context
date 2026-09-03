@@ -44,7 +44,8 @@ function Userlists() {
           return (
             <div
               key={item}
-              className="animate-pulse rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
+              className="animate-pulse rounded-2xl border border-gray-200 bg-white p-6 shadow-sm"
+            >
               <div className="mx-auto mb-4 h-24 w-24 rounded-full bg-gray-200"></div>
               <div className="mx-auto mb-3 h-5 w-32 rounded bg-gray-200"></div>
               <div className="mx-auto h-24 w-48 rounded bg-gray-200"></div>
@@ -71,7 +72,8 @@ function Userlists() {
           <UserCard
             key={user.id}
             user={user}
-            onClick={() => selectUser(user)}/>
+            onClick={() => selectUser(user)}
+          />
         );
       })}
       {showModal && (

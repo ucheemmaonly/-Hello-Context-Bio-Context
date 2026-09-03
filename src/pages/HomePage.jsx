@@ -1,12 +1,12 @@
-import React from 'react'
-import Userlists from '../Components/Userlists'
+import React from "react";
+import Userlists from "../Components/Userlists";
 
 function Homepage() {
   return (
     <div>
-        <Userlists/>
+      <Userlists />
     </div>
-  )
+  );
 }
 
-export default Homepage
+export default Homepage;

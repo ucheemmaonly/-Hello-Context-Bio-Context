@@ -1,6 +1,4 @@
-import { useBio } from "../context/BioContext";
 function Usercard({ user, onClick }) {
-  const { hobby, favoriteColor } = useBio();
   return (
     <div
       onClick={onClick}
@@ -24,12 +22,6 @@ function Usercard({ user, onClick }) {
         </p>
 
         <p className="mt-3 truncate text-sm text-gray-500">{user.email}</p>
-
-        <p className="mt-2 text-sm text-gray-500">Hobby: {hobby}</p>
-
-        <p className="mt-1 text-sm text-gray-500">
-          Favorite Color: {favoriteColor}
-        </p>
       </div>
 
       <div className="mt-5 border-t border-gray-100 pt-4 text-center">

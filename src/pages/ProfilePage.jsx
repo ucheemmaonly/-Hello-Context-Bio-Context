@@ -16,6 +16,9 @@ function ProfilePage() {
     <div>
       <p>Name: {name}</p>
       <p>Age: {age}</p>
+      <p>Best Food: {bestfood}</p>
+      <p>Hobby: {hobby}</p>
+      <p>Favorite Color: {favoriteColor}</p>
       <p>Greeting: {greeting}</p>
     </div>
   );

@@ -4,10 +4,11 @@ const BioContext = createContext(null);
 
 export function BioProvider({ children }) {
   const bio = {
-    name: "Emmanuel",
-    age: 20,
-    hobby: "watching movies, sleeping, playing games",
-    favoriteColor: "Purple",
+    name: "Uche Emmanuel Chisom",
+      age: 20,
+    bestfood: "Vegetable soup and Fufu",
+    hobby: "Watching movies and documentaries, sleeping, playing football games",
+    favoriteColor: "Black and Blue",
   };
 
   return (
